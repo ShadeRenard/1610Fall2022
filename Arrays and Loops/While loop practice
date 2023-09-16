@@ -1,0 +1,16 @@
+using System;
+
+public class Program 
+{
+public static void Main ()
+{
+	Console.WriteLine("This example writes every number less than the variable.");
+int i = 0;
+while (i < 3) 
+{
+  Console.WriteLine(i);
+  i++;
+}
+
+}
+}
