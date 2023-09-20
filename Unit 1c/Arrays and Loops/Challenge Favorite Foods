@@ -6,13 +6,13 @@ public static void Main ()
 {
 	Console.WriteLine("What is your favorite food? Is it...");
 	Console.WriteLine();
-	string[] foodTypes = {"a Pizza", "b Seafood", "c Pasta", "d Burgers"};
+	string[] foodTypes = {"A Pizza", "B Seafood", "C Pasta", "D Burgers"};
 	for (var i = 0; i < foodTypes.Length; i++){
 	}
 	foreach(var favoriteType in foodTypes) {
 		Console.WriteLine(favoriteType);
 		Console.WriteLine();
 }
-	Console.WriteLine("You have chosen");
+	Console.WriteLine("You have chosen " + foodTypes[0]);
 }
 }
