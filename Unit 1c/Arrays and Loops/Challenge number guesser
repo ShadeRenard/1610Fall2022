@@ -4,16 +4,35 @@ public class Program
 {
 public static void Main ()
 {
-string[] numbers = {"1", "2", "3", "4","5","6","7","8","9","10"};
+	number[] guessedNumbers = {new number(), new number(), new number()};
 	Console.WriteLine("Can you guess the number I am thinking of?");
-	numbers [0] = "too low";
-	numbers [10] = "too high";
-	numbers [5] = "that is the correct number!";
+	guessedNumbers[0].answerHigh = "10";
+	guessedNumbers[1].answerLow = "1";
+	guessedNumbers[2].correctGuess = "5";
 	for (int k = 10; k >= 1; k--)
 	{
   Console.Write (k+ " ");
 }
 	Console.WriteLine();
-	
+	{
+	}
+	Console.WriteLine(guessedNumbers[1].answerLow);
+	foreach(var answerLow in guessedNumbers){
+				Console.WriteLine("too low");
+	Console.WriteLine(guessedNumbers[0].answerHigh);
+		foreach(var answerHigh in guessedNumbers){
+			Console.WriteLine("too high");
+			Console.WriteLine(guessedNumbers[2].correctGuess);
+	foreach(var correctGuess in guessedNumbers){
+		Console.WriteLine("Correct");
+	}
+	}
+}
+}
+
+public class number {
+	public string answerHigh = "10";
+public string answerLow = "1";
+	public string correctGuess = "5";
 }
 }
